@@ -1,7 +1,7 @@
 #include "core/Game.hpp"
 
 Game::Game(sf::ContextSettings& settings)
-    : window(sf::VideoMode(800, 600), "LERP", sf::Style::Default, settings) {
+    : window(sf::VideoMode(800, 600), "Game", sf::Style::Default, settings) {
 
     GameObjectFactory::getInstance().registerType<Player>("Player");
     GameObjectFactory::getInstance().registerType<Tile>("Tile");

@@ -1,6 +1,6 @@
 #include "Gameplay.hpp"
-#include "../GameObjectFactory.hpp"
-#include "../GameObject.hpp"
+#include "core/GameObjectFactory.hpp"
+#include "core/GameObject.hpp"
 
 Gameplay::Gameplay() {}
 

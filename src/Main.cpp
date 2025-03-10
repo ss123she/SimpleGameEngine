@@ -6,7 +6,7 @@
 int main()
 {
     sf::ContextSettings settings;
-    settings.antialiasingLevel = 8;
+    settings.antialiasingLevel = 0;
 
     Game game(settings);
     game.run();

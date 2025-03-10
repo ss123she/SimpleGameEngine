@@ -39,6 +39,18 @@ public:
         components[typeID] = std::move(component);
         return static_cast<T*>(components[typeID].get());
     }
+
+    void addTag(std::string tagName) {
+        tags.push_back(tagName);
+    }
+
+    void deleteTag(std::string tagName) {
+        tags.erase(std::find(tags.begin(), tags.end(), tagName), tags.end());
+    }
+
+    std::vector<std::string> getTags() const {
+        return tags;
+    }
     
     template <typename T>
     T* getComponent() {
@@ -67,6 +79,7 @@ public:
     }
 
 private:
+    std::vector<std::string> tags;
     std::vector<std::unique_ptr<Component>> components;
     static inline size_t nextID = 0;
 };

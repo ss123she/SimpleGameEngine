@@ -2,8 +2,8 @@
 
 #include "GameObjectFactory.hpp"
 #include "Utils.hpp"
-#include "gameObjects/Components/RenderComponent.hpp"  // Add this include
-#include "gameObjects/Components/TransformComponent.hpp" // Add this include
+#include "gameObjects/Components/RenderComponent.hpp"
+#include "gameObjects/Components/TransformComponent.hpp"
 #include <fstream>
 #include <filesystem>
 #include <vector>
